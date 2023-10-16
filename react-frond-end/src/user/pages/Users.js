@@ -5,7 +5,7 @@ const Users = () => {;
     const USERS = [
       {
         id: 'u1',
-        name: 'Max Schwarz',
+        name: 'Micheal Suneo',
         image:
           'https://avgs-coaching.de/wp-content/uploads/2023/04/Max-Schwarz-AVGS.jpg',
         places: 3
