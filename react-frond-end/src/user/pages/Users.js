@@ -6,11 +6,12 @@ const Users = () => {;
       {
         id: 'u1',
         name: 'Max Schwarz',
-        image:'https://avgs-coaching.de/wp-content/uploads/2023/04/Max-Schwarz-AVGS.jpg',
+        image:
+          'https://avgs-coaching.de/wp-content/uploads/2023/04/Max-Schwarz-AVGS.jpg',
         places: 3
       }
     ]
-  return <UserList items={}/>
+  return <UsersList items={USERS}/>
 };
 
 export default Users
