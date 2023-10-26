@@ -44,9 +44,9 @@ const UpdatePlace = () => {
         <h2> Could not find place! </h2>
       </div>
     )
-
-      return (
-    <form>
+  }
+  return (
+    <form className="place-form">
       <Input
         id="title"
         element="input"
@@ -72,8 +72,7 @@ const UpdatePlace = () => {
         UPDATE PLACE
       </Button>
     </form>
-    )
-  }
+  )
 
 }
 
