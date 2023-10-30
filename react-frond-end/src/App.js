@@ -32,7 +32,7 @@ const App = () => {
             <UpdatePlace />
           </Route>
           <Route path="/auth">
-
+            <Auth />
           </Route>
           <Redirect to="/" />
         </Switch>
