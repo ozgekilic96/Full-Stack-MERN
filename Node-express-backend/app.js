@@ -27,10 +27,10 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-  .connect('mongodb+srv://-@bcex.snckbaj.mongodb.net/?retryWrites=true&w=majority')
+  .connect('mongodb+srv://<user_name>:<password>@bcex.snckbaj.mongodb.net/?retryWrites=true&w=majority')
   .then(() => {
     app.listen(5000);
   })
   .catch(err => {
-    console.log(err)
-  })
+    console.log(err);
+  });
