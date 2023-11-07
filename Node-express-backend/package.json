@@ -1,29 +1,21 @@
 {
-  "name": "node",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "node.js & express",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "Full-Stack-MERN"
-  },
-  "keywords": [
-    "node.js",
-    "express.js",
-    "mongoDB"
-  ],
-  "author": "özge kilic",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.6.0",
-    "body-parser": "^1.20.2",
-    "express": "^4.18.2",
-    "express-validator": "^7.0.1",
-    "uuid": "^9.0.1"
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.15.0",
+    "mongoose": "^8.0.0",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
