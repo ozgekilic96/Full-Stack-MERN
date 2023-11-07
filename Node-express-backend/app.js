@@ -27,7 +27,7 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-  .connect('mongodb+srv://ozgekilic96:siemal<3@bcex.snckbaj.mongodb.net/?retryWrites=true&w=majority')
+  .connect('mongodb+srv://-@bcex.snckbaj.mongodb.net/?retryWrites=true&w=majority')
   .then(() => {
     app.listen(5000);
   })
