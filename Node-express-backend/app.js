@@ -72,7 +72,7 @@ const { MONGO_URI } = process.env;
 
 exports.connect = () => {
   mongoose
-    .connect('mongodb+srv://ozgekilic96:<password>@bcex.snckbaj.mongodb.net/mern?retryWrites=true&w=majority', {
+    .connect('mongodb+srv://<user>:<password>@bcex.snckbaj.mongodb.net/mern?retryWrites=true&w=majority', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       // useCreateIndex: true,
