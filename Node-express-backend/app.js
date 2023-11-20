@@ -9,6 +9,7 @@ const placesRoutes = require('./routes/places-routes');
 const usersRoutes = require('./routes/users-routes');
 const HttpError = require('./models/http-error');
 
+const port = 5000;
 const app = express();
 
 app.use(bodyParser.json());
@@ -47,26 +48,27 @@ app.use((error, req, res, next) => {
   res.json({ message: error.message || 'An unknown error occurred!' });
 });
 
-/* mongoose
-  .connect('mongodb+srv://ozgekilic96:ozge1234@bcex.snckbaj.mongodb.net/?retryWrites=true&w=majority')
+mongoose
+  .connect(
+    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.15qijsl.mongodb.net/?retryWrites=true&w=majority`
+  )
   .then(() => {
     app.listen(5000);
   })
   .catch(err => {
     console.log(err);
   });
- */
 
 
-const { MONGO_URI } = process.env;
+/* const { MONGO_URI } = process.env;
 
 exports.connect = () => {
   mongoose
-    .connect('mongodb+srv://<user>:<password>@bcex.snckbaj.mongodb.net/mern?retryWrites=true&w=majority', {
+    .connect('mongodb+srv://sophiekilic96:<password>@cluster0.15qijsl.mongodb.net/?retryWrites=true&w=majority', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      // useCreateIndex: true,
-      // useFindAndModify: false,
+      useCreateIndex: true,
+      useFindAndModify: false,
     })
     .then(() => {
       app.listen(5000);
@@ -78,3 +80,4 @@ exports.connect = () => {
       process.exit(1);
     });
 };
+ */
